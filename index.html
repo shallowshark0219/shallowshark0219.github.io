@@ -29,47 +29,74 @@
 
     body {
       margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 48px 16px;
       background: var(--paper);
       color: var(--ink);
       font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-      line-height: 1.7;
+      font-size: 17px;
+      line-height: 1.85;
     }
 
     main {
-      width: 100%;
-      max-width: 400px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    header {
       text-align: center;
+      margin-bottom: 40px;
     }
 
     .logo {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       display: block;
-      margin: 0 auto 24px;
+      margin: 0 auto 20px;
     }
 
     h1 {
-      margin: 0 0 12px;
+      margin: 0;
       font-size: 1.75rem;
       color: var(--navy);
       letter-spacing: 0.08em;
     }
 
-    .bio {
-      margin: 0 0 32px;
-      color: var(--muted);
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      padding-left: 12px;
+      border-left: 4px solid var(--orange);
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: var(--navy);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.3em;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li::marker {
+      color: var(--orange);
     }
 
     .links {
       display: flex;
       flex-direction: column;
       gap: 12px;
+      margin-top: 48px;
     }
 
     .links a {
@@ -79,6 +106,7 @@
       border-radius: 999px;
       color: var(--navy);
       font-weight: 600;
+      text-align: center;
       text-decoration: none;
       transition: background 0.15s, color 0.15s;
     }
@@ -97,6 +125,7 @@
 
     footer {
       margin-top: 40px;
+      text-align: center;
       font-size: 0.8rem;
       color: var(--muted);
     }
@@ -104,9 +133,32 @@
 </head>
 <body>
   <main>
-    <img class="logo" src="images/logo.png" alt="淺水鯊製作所 logo" width="200" height="200">
-    <h1>淺水鯊製作所</h1>
-    <p class="bio">喜歡新奇有趣的想法或內容，<br>想把這些美好分享給好多人知道。<br>本業是數學教育。</p>
+    <header>
+      <img class="logo" src="images/logo.png" alt="淺水鯊製作所 logo" width="180" height="180">
+      <h1>淺水鯊製作所</h1>
+    </header>
+
+    <section>
+      <h2>背景</h2>
+      <p>嗨！我的本業是數學教育。</p>
+      <p>不過我常常被「有趣的創意」吸引，也被那些「能夠實現創意的人」吸引。</p>
+    </section>
+
+    <section>
+      <h2>與 Maker 的淵源——為什麼想做？</h2>
+      <p>國中開始玩麵包板，高中碰了 3D 列印、雷切和 Arduino，開始工作以後就比較少做了。2026 年和同事去了 Maker Faire Tokyo，回來就決定自己報名參展。</p>
+      <p>想把在東京看到的 maker 精神帶回台灣：maker 不是另一種才藝班，也不是升學的加分工具，而是每個人都能動手做出有趣的東西。</p>
+      <p>剛巧我的住處也還沒有 3D 列印和雷切機，所以就嘗試用冰棒棍、橡皮筋、束帶和紙做一些最基礎的結構。重點是有趣對吧？</p>
+    </section>
+
+    <section>
+      <h2>我還對什麼感興趣？</h2>
+      <ul>
+        <li>喜歡新奇有趣的想法或內容，想把這些美好分享給好多人知道。</li>
+        <li>想認識在做（或想做）maker 教育的人，聽聽你們眼中的 maker 教育是什麼、遇到了哪些困難。</li>
+        <li>蒐集有趣的上課素材或教法</li>
+      </ul>
+    </section>
 
     <nav class="links">
       <a href="https://www.instagram.com/shark._.0219/">Instagram<small>@shark._.0219</small></a>
